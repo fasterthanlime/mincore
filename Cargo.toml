@@ -8,3 +8,4 @@ edition = "2018"
 [dependencies]
 libc = "0.2.121"
 memmap2 = "0.5.3"
+page_size = "0.4.2"
