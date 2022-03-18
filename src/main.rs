@@ -6,7 +6,7 @@ use std::fs::File;
 
 fn main() -> Result<(), Box<dyn Error>> {
     // keep unsafe blocks small - do our safe work outside of it.
-    let path = env::args().nth(1).expect("Need an file");
+    let path = env::args().nth(1).expect("Need a file");
     let file = File::open(&path)?;
     // even though `file` is shadowed, it lives on - you can be sure because
     // `Mmap` lives only as long as the underlying `File`. It would definitely
